@@ -10,7 +10,11 @@ body {
     background: url('../img/heroMD.jpg') no-repeat fixed center;
   }
 }
-a:hover {
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+a:hover a:visited {
   color: #496d87;
 }
 
@@ -28,6 +32,7 @@ h3 {
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 60px;
 }
 h4 {
   font-size: 1.5em;
@@ -37,7 +42,8 @@ h4 {
 nav {
   width: 100%;
   padding: 0 100px;
-  background-color: rgba(248,247,229,0.5);
+  background-color: rgba(248,247,229,0.9);
+  font-size: 1.3em;
 }
 nav a {
   color: #262b2b;
@@ -49,5 +55,102 @@ nav a {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 170px);
+}
+
+/************** ABOUT *****************/
+section#about {
+  background-color: #f8f7e5;
+  text-align: center;
+}
+.about-cards {
+  margin: 0 auto;
+  width: 80%;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5%;
+}
+.about-img {
+  width: 70px;
+  height: 70px;
+  background-color: #485a67;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about-cards svg, .mathart {
+  width: 35px;
+}
+
+/************** SKILLS *****************/
+section#skills {
+  background-color: rgba(248,247,229,0.6);
+}
+.skills-chart {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+.skills-chart p {
+  width: 100%;
+}
+.skills-chart p span:nth-child(1) {
+  padding: .25em 0 .25em .5em;
+  background-color: #363c43;
+  color: #f8f7e5;
+}
+.skills-chart p span:nth-child(2) {
+  padding: .25em 0 .25em .5em;
+  background-color: #496d87;
+  color: #496d87;
+  float: right;
+}
+.sk-1 {
+	display: inline-block;
+	width: 10%;
+}
+.sk-2 {
+	display: inline-block;
+	width: 20%;
+}
+.sk-3 {
+	display: inline-block;
+	width: 30%;
+}
+.sk-4 {
+	display: inline-block;
+	width: 40%;
+}
+.sk-5 {
+	display: inline-block;
+	width: 50%;
+}
+.sk-6 {
+	display: inline-block;
+	width: 60%;
+}
+.sk-7 {
+	display: inline-block;
+	width: 70%;
+}
+.sk-8 {
+	display: inline-block;
+	width: 80%;
+}
+.sk-9 {
+	display: inline-block;
+	width: 90%;
+}
+.sk-10 {
+	display: inline-block;
+	width: 100%;
 }
