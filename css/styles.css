@@ -1,0 +1,53 @@
+/************** GENERAL STYLES *****************/
+body {
+  background: url('../img/heroLG.jpg') no-repeat fixed center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: #363c43;
+}
+@media(max-width: 768px){
+  body {
+    background: url('../img/heroMD.jpg') no-repeat fixed center;
+  }
+}
+a:hover {
+  color: #496d87;
+}
+
+/************** FONTS *****************/
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: #262b2b;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+h4 {
+  font-size: 1.5em;
+}
+
+/************** NAV BAR *****************/
+nav {
+  width: 100%;
+  padding: 0 100px;
+  background-color: rgba(248,247,229,0.5);
+}
+nav a {
+  color: #262b2b;
+}
+
+/************** LANDING PAGE *****************/
+.head-text {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

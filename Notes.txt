@@ -1,0 +1,11 @@
+
+//COLOR
+
+primary  	= #f8f7e5
+text		= #262b2b
+secondary 	= #394a52
+
+
+//ABOUT
+
+EDUCATOR
