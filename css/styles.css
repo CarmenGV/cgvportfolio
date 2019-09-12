@@ -222,3 +222,41 @@ section#portfolio {
 .port-item:hover .port-desc {
   opacity: 1;
 }
+
+/************** CONTACT *****************/
+section#contact {
+  background-color: #363c43;
+  color: #f8f7e5;
+}
+.social-contact {
+  width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon {
+  background-color: #f8f7e5;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon a {
+  border: 2px solid #363c43;
+  border-radius: 10px;
+  padding: 10px;
+}
+.social-svg {
+  width: 35px;
+  height: 35px;
+  fill: #363c43;
+}
+.social-desc {
+  font-size: 1em;
+  text-transform: uppercase;
+}
