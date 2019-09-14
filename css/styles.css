@@ -66,7 +66,7 @@ nav a:hover {
 section#about {
   background-color: #f8f7e5;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .about-cards {
   margin: 0 auto;
@@ -89,14 +89,15 @@ section#about {
   align-items: center;
   margin-bottom: 40px;
 }
-.about-cards svg, .mathart {
+.about-cards svg {
   width: 35px;
+  height: 35px;
 }
 
 /************** SKILLS *****************/
 section#skills {
   background-color: rgba(248,247,229,0.6);
-  height: 100vh;
+  min-height: 100vh;
 }
 .skills-chart {
   margin: auto;
@@ -172,7 +173,7 @@ section#portfolio {
 .port-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
-  grid-auto-rows: 320px;
+  grid-auto-rows: 340px;
 }
 .port-item {
   display: flex;
@@ -191,25 +192,34 @@ section#portfolio {
 }
 .port-desc ul {
   padding: 0;
+  margin-bottom: .5em;
 }
 .port-desc li {
   list-style-type: none;
   text-align: center;
 }
-.port-desc a {
-  padding: 10px 15px;
+.port-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.port-links a:nth-child(1) {
+  margin-bottom: 5px;
+}
+.port-links a {
+  padding: 10px;
   border: 1px solid #363c43;
   border-radius: 5px;
   color: #363c43;
   text-decoration: none;
   font-weight: 500;
 }
-.port-desc a:hover {
+.port-links a:hover {
   background-color: #363c43;
   color: #f8f7e5;
 }
 .port-item img {
-  border: 1px solid #c9c5b3;
+  border: 3px solid #c9c5b3;
   border-radius: 15px;
   opacity: 0.9;
   display: block;
@@ -227,19 +237,17 @@ section#portfolio {
 section#contact {
   background-color: #363c43;
   color: #f8f7e5;
-}
-.social-contact {
-  width: 50%;
-  min-width: 300px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .social {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .social-icon {
-  background-color: #f8f7e5;
-  border-radius: 50%;
   width: 75px;
   height: 75px;
   display: flex;
@@ -247,16 +255,23 @@ section#contact {
   align-items: center;
 }
 .social-icon a {
-  border: 2px solid #363c43;
+  border: 2px solid #f8f7e5;
   border-radius: 10px;
   padding: 10px;
 }
-.social-svg {
+.social-icon svg {
   width: 35px;
   height: 35px;
-  fill: #363c43;
 }
-.social-desc {
+.social-svg {
+  fill: #f8f7e5;
+}
+.social-desc a {
   font-size: 1em;
-  text-transform: uppercase;
+  margin-left: 15px;
+  color: #c9c5b3;
+}
+.social-desc a:hover {
+  color: #f8f7e5;
+  text-decoration: none;
 }
