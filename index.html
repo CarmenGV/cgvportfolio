@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Carmen Vargas | Portfolio</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <nav class="sticky-top">
-    <div clss="d-none d-md d-lg-block d-xl-block">
-      <ul class="nav justify-content-between">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="navbar navbar-dark d-block d-md-none d-lg-none d-xl-none d-flex justify-content-center">
+      <div class="d-none d-md-block d-lg-block d-xl-block">
+        <ul class="nav justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar navbar-dark d-block d-md-none d-lg-none d-xl-none d-flex justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,8 +33,7 @@
           </ul>
         </div>
       </div>
-  </nav>
-
+    </nav>
   <section id="head">
     <div class="head-text">
       <h1>Front-End Web Developer</h1>
@@ -43,33 +43,34 @@
 
   <section id="about">
     <h3>About</h3>
+    <p class="about-desc">While relatively new to the field of web development, I have a number of years of experience in leadership, collaboration, and team building, and have gained strong presentation and communication skills.</p>
     <!-- Cards -->
     <div class="row about-cards">
       <div class="col-12 col-md about-card">
         <div class="about-img">
-          <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="35" height="31.5" viewBox="0 0 140 126">
-            <path fill="#f8f7e5" d="M115.665 86.623c-.704 16.141-1.851 25.87 8.875 26.795 11.203.966 11.738-9.692 11.738-9.692H140s-.748 22.353-21.759 22.234c-9.595-.055-16.55-6.008-17.464-12.827-1.024-7.642 2.29-33.066 2.29-33.066l2.291-17.958H85.031s-1.228 12.43-2.291 25.939c-.293 3.734-.816 7.47-1.44 10.979l.102-.05c-.034.021-.07.041-.104.063-1.399 7.871-3.305 14.591-4.284 17.513-2.958 8.837-10.307 10.507-16.032 8.837-5.88-1.715-6.49-5.131-6.299-8.552.087-1.563 2.695-4.597 5.948-8.737-.581.144-1.16.297-1.745.422l1.757-.437c3.863-4.916 8.634-11.395 11.218-18.897 2.359-6.849 3.704-17.989 4.266-23.605l-.1.005.101-.015c.213-2.128.314-3.465.314-3.465s-7.633-.974-14.315.855c-6.052 1.657-10.116 8.267-11.452 9.692-1.336 1.425-3.722.285-3.722.285s5.591-16.59 15.174-20.809c5.527-2.433 28.343-1.995 28.343-1.995l29.242.169.494-1.475c-.123.479-.282.985-.42 1.476l19.928.115v11.117l-22.045.285s-1.36 10.033-2.004 24.799zM81.881 48.712c-4.466 0-16.323-.411-22.617 3.135-7.932 4.47-14.601 21.949-14.601 21.949s.876.344 2.042.635c-4.764.701-8.424 4.782-8.424 9.725 0 5.437 4.421 9.844 9.875 9.844s9.875-4.407 9.875-9.844c0-4.533-3.078-8.34-7.261-9.484.276-.072.537-.168.764-.306 1.533-.933 3.575-5.826 9.448-8.836 5.117-2.624 13.169-1.426 13.169-1.426l.282 1.686c-4.515.967-7.902 4.966-7.902 9.757 0 3.647 1.968 6.828 4.897 8.571l-.14-.06s-.813 5.557-4.58 11.972c-3.312 5.639-8.429 11.933-9.088 12.737-3.231.613-6.515.957-9.84.945C11.546 109.585.131 87.065 0 67.819-.14 47.238 9.006 30.04 25.015 17.198 41.025 4.356 51.965.676 65.791-.008c7.01-.347 14.372 3.437 17.511 7.98 4.086 5.914 2.217 12.201 7.254 14.213 7.796 3.116 11.507-5.735 20.763-2.493 7.401 2.592 13.133 12.307 8.916 29.02H81.881zM13.5 68.312c0 5.368 4.372 9.719 9.766 9.719 5.393 0 9.765-4.351 9.765-9.719 0-5.367-4.372-9.718-9.765-9.718-5.394 0-9.766 4.351-9.766 9.718zm19.641-38.656c-5.463 0-9.891 4.414-9.891 9.86 0 5.445 4.428 9.859 9.891 9.859 5.462 0 9.89-4.414 9.89-9.859 0-5.446-4.428-9.86-9.89-9.86zm51.89 51.266l-.166.186a9.92 9.92 0 0 0 1.698-5.561 9.91 9.91 0 0 0-1.187-4.713l.514.682.572-7.697 16.892.285-1.937 17.91c-5.133 5.619-11.243 11.101-18.059 15.683.14-1.022.576-4.334.814-7.653.274-3.828.859-9.122.859-9.122z" fill-rule="evenodd"/>
+          <svg class="about-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="35" height="31.5" viewBox="0 0 140 126">
+            <path class="about-path" fill="#f8f7e5" d="M115.665 86.623c-.704 16.141-1.851 25.87 8.875 26.795 11.203.966 11.738-9.692 11.738-9.692H140s-.748 22.353-21.759 22.234c-9.595-.055-16.55-6.008-17.464-12.827-1.024-7.642 2.29-33.066 2.29-33.066l2.291-17.958H85.031s-1.228 12.43-2.291 25.939c-.293 3.734-.816 7.47-1.44 10.979l.102-.05c-.034.021-.07.041-.104.063-1.399 7.871-3.305 14.591-4.284 17.513-2.958 8.837-10.307 10.507-16.032 8.837-5.88-1.715-6.49-5.131-6.299-8.552.087-1.563 2.695-4.597 5.948-8.737-.581.144-1.16.297-1.745.422l1.757-.437c3.863-4.916 8.634-11.395 11.218-18.897 2.359-6.849 3.704-17.989 4.266-23.605l-.1.005.101-.015c.213-2.128.314-3.465.314-3.465s-7.633-.974-14.315.855c-6.052 1.657-10.116 8.267-11.452 9.692-1.336 1.425-3.722.285-3.722.285s5.591-16.59 15.174-20.809c5.527-2.433 28.343-1.995 28.343-1.995l29.242.169.494-1.475c-.123.479-.282.985-.42 1.476l19.928.115v11.117l-22.045.285s-1.36 10.033-2.004 24.799zM81.881 48.712c-4.466 0-16.323-.411-22.617 3.135-7.932 4.47-14.601 21.949-14.601 21.949s.876.344 2.042.635c-4.764.701-8.424 4.782-8.424 9.725 0 5.437 4.421 9.844 9.875 9.844s9.875-4.407 9.875-9.844c0-4.533-3.078-8.34-7.261-9.484.276-.072.537-.168.764-.306 1.533-.933 3.575-5.826 9.448-8.836 5.117-2.624 13.169-1.426 13.169-1.426l.282 1.686c-4.515.967-7.902 4.966-7.902 9.757 0 3.647 1.968 6.828 4.897 8.571l-.14-.06s-.813 5.557-4.58 11.972c-3.312 5.639-8.429 11.933-9.088 12.737-3.231.613-6.515.957-9.84.945C11.546 109.585.131 87.065 0 67.819-.14 47.238 9.006 30.04 25.015 17.198 41.025 4.356 51.965.676 65.791-.008c7.01-.347 14.372 3.437 17.511 7.98 4.086 5.914 2.217 12.201 7.254 14.213 7.796 3.116 11.507-5.735 20.763-2.493 7.401 2.592 13.133 12.307 8.916 29.02H81.881zM13.5 68.312c0 5.368 4.372 9.719 9.766 9.719 5.393 0 9.765-4.351 9.765-9.719 0-5.367-4.372-9.718-9.765-9.718-5.394 0-9.766 4.351-9.766 9.718zm19.641-38.656c-5.463 0-9.891 4.414-9.891 9.86 0 5.445 4.428 9.859 9.891 9.859 5.462 0 9.89-4.414 9.89-9.859 0-5.446-4.428-9.86-9.89-9.86zm51.89 51.266l-.166.186a9.92 9.92 0 0 0 1.698-5.561 9.91 9.91 0 0 0-1.187-4.713l.514.682.572-7.697 16.892.285-1.937 17.91c-5.133 5.619-11.243 11.101-18.059 15.683.14-1.022.576-4.334.814-7.653.274-3.828.859-9.122.859-9.122z" fill-rule="evenodd"/>
           </svg>
         </div>
-        <p class="about-desc">Though having a strong background in art and design, I earned a bachelors degree in mathematics, inspired to help others through the complexities of the subject.  I was determined to prove to young and old that math <i>is</i> fun.</p>
+        <p>Though having a strong background in art and design, I earned a bachelors degree in mathematics, having developed an oddly profound love and enjoyment in logic and problem solving.</p>
       </div>
       <div class="acol-12 col-md about-card">
         <div class="about-img">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-            <path fill="#f8f7e5" d="M880.1 388.3c-12.7-27.6-27.8-49.7-45.1-66.4-17.3-16.6-36.5-28.7-57.3-36.1-20.9-7.4-43.2-11.5-66.9-12.2-23.7-.7-48 1.1-72.7 5.3-9.9 1.4-19.8 4.2-29.7 8.5l-29.7 12.7c-9.9 4.2-20.2 8-30.8 11.1-10.6 3.2-21.2 4.8-31.9 4.8-21.2 0-40.2-4.4-56.8-13.3-16.6-8.8-32.4-16.1-47.3-21.8-38.2-12.7-78-16.3-119.5-10.6-41.4 5.7-80.2 23-116.3 52-34.7 27.6-58.4 61.4-71.1 101.4-12.7 40-16.6 83.4-11.7 130.1 5 46.7 17.3 95.2 37.2 145.5 19.8 50.3 45 99.1 75.4 146.5 24.1 37.5 44.2 66.7 60.5 87.6 16.3 20.9 33.1 35.8 50.4 44.6 17.3 8.9 37.3 12.7 60 11.7 22.7-1.1 52-4.8 88.1-11.2 21.9-3.5 41.9-4.4 60-2.7 18.1 1.8 34.9 4.1 50.4 6.9 15.6 2.8 30.3 5 44.1 6.4 13.8 1.4 27.6.4 41.4-3.2 13.8-3.5 28-11.1 42.5-22.8 14.5-11.7 30.3-29.2 47.3-52.6 27.6-38.9 53.6-79.8 78-122.6s43.7-86.5 57.9-131.1c14.2-44.6 21.6-89.6 22.3-134.9.7-45.1-8.9-89.7-28.7-133.6zM567.7 132c67.1-25.7 195.4-29.8 195.4-29.8-68.7 13.6-157.9 42.6-205.8 98.2 29.1 15.1 62.4 40.7 147.6 28.3 85.3-12.3 187.4-124.8 187.4-124.8S734.6-4.2 648.9 29.1c-56.8 22.1-90.4 78-106.6 113.3 7.4-3.3 15.9-6.8 25.4-10.4zM548.2 120.5z"/>
+          <svg class="about-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+            <path class="about-path" fill="#f8f7e5" d="M880.1 388.3c-12.7-27.6-27.8-49.7-45.1-66.4-17.3-16.6-36.5-28.7-57.3-36.1-20.9-7.4-43.2-11.5-66.9-12.2-23.7-.7-48 1.1-72.7 5.3-9.9 1.4-19.8 4.2-29.7 8.5l-29.7 12.7c-9.9 4.2-20.2 8-30.8 11.1-10.6 3.2-21.2 4.8-31.9 4.8-21.2 0-40.2-4.4-56.8-13.3-16.6-8.8-32.4-16.1-47.3-21.8-38.2-12.7-78-16.3-119.5-10.6-41.4 5.7-80.2 23-116.3 52-34.7 27.6-58.4 61.4-71.1 101.4-12.7 40-16.6 83.4-11.7 130.1 5 46.7 17.3 95.2 37.2 145.5 19.8 50.3 45 99.1 75.4 146.5 24.1 37.5 44.2 66.7 60.5 87.6 16.3 20.9 33.1 35.8 50.4 44.6 17.3 8.9 37.3 12.7 60 11.7 22.7-1.1 52-4.8 88.1-11.2 21.9-3.5 41.9-4.4 60-2.7 18.1 1.8 34.9 4.1 50.4 6.9 15.6 2.8 30.3 5 44.1 6.4 13.8 1.4 27.6.4 41.4-3.2 13.8-3.5 28-11.1 42.5-22.8 14.5-11.7 30.3-29.2 47.3-52.6 27.6-38.9 53.6-79.8 78-122.6s43.7-86.5 57.9-131.1c14.2-44.6 21.6-89.6 22.3-134.9.7-45.1-8.9-89.7-28.7-133.6zM567.7 132c67.1-25.7 195.4-29.8 195.4-29.8-68.7 13.6-157.9 42.6-205.8 98.2 29.1 15.1 62.4 40.7 147.6 28.3 85.3-12.3 187.4-124.8 187.4-124.8S734.6-4.2 648.9 29.1c-56.8 22.1-90.4 78-106.6 113.3 7.4-3.3 15.9-6.8 25.4-10.4zM548.2 120.5z"/>
             <path fill="#f8f7e5" d="M504.7 266.9c7-1.6 13.9-3.1 20.8-4.5-21-69.7-28.8-158.3 47.9-209.8L510.8 10c-99 66.6-68.5 163.8-34.8 250.8 9.4 1.8 19 3.8 28.7 6.1z"/>
           </svg>
         </div>
-        <p class="about-desc">After teaching high school math for 14 years, I learned that teens have excellent selective hearing abilities.  I also acquired a unique perspective, as well as gained organizational, teambuilding, and presentational skills.</p>
+        <p>After teaching high school math for 14 years, I learned that teens have excellent selective hearing abilities.  I also gained organizational, teambuilding, and presentational skills.</p>
       </div>
       <div class="col-12 col-md about-card">
         <div class="about-img">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-            <path fill="#f8f7e5"d="M701.8 298v108.8c0 90.1-466.4 90.1-466.4 0V289.2c36.3 19.6 72.5 38.2 108.8 57.8 11.8 6.9 31.4 7.8 45.1 4.9C494.1 333.2 598 315.6 701.8 298zm76.4-45.1V343c-2.9 1-5.9 2.9-6.9 5.9l-1 11.8c0 6.9 5.9 9.8 5.9 14.7l-1 10.8c0 3.9-4.9 7.8-4.9 12.7l-15.7 100.9c5.9 11.8 66.6 12.7 73.5 0l-15.7-100.9c0-5.9-4.9-8.8-4.9-12.7l-1-10.8c0-5.9 6.9-6.9 5.9-14.7l-1-11.8c0-2.9-3.9-4.9-6.9-5.9v-84.3L986 227.4c4.9-1 5.9-3.9 0-5.9-87.2-25.5-166.6-49-240-69.6-65.6-18.6-125.4-36.3-181.3-52.9-9.8-2.9-16.7-2.9-26.5-2-72.5 5.9-150.9 12.7-233.2 19.6-90.1 7.8-186.2 15.7-289 24.5-8.8 1-6.9 7.8-1 9.8 41.1 21.6 86.2 45.1 135.2 71.5C210 253.9 277.6 289.2 353 329.3c6.9 3.9 20.6 4.9 31.4 2.9 124.4-21.6 247.9-43.1 372.3-64.7 0-3.9-2-6.9-6.9-7.8l-289-47c-25.5-3.9-20.6-22.5-5.9-19.6L768.4 244c5.9-.9 9.8 3 9.8 8.9zM528.4 888.8c-6.9-25.5-6.9-51.9 5.9-76.4l-485-155.8c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.8-2.9-307.7 137.1zm16.7-294l187.1-82.3 14.7-93.1-22.5-6.9c-10.8 77.4-200.8 83.3-254.7 83.3-54.9 0-254.7-5.9-254.7-89.2v-34.3L61.1 440l484 154.8zm-16.7 80.4c-6.9-25.5-6.9-51.9 5.9-76.4L49.3 443c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.9-3-307.6 137.2zM526.5 782c-6.9-25.5-6.9-51.9 5.9-76.4l-485-155.8c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.8-2.9L526.5 782z"/>
+          <svg class="about-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+            <path class="about-path" fill="#f8f7e5"d="M701.8 298v108.8c0 90.1-466.4 90.1-466.4 0V289.2c36.3 19.6 72.5 38.2 108.8 57.8 11.8 6.9 31.4 7.8 45.1 4.9C494.1 333.2 598 315.6 701.8 298zm76.4-45.1V343c-2.9 1-5.9 2.9-6.9 5.9l-1 11.8c0 6.9 5.9 9.8 5.9 14.7l-1 10.8c0 3.9-4.9 7.8-4.9 12.7l-15.7 100.9c5.9 11.8 66.6 12.7 73.5 0l-15.7-100.9c0-5.9-4.9-8.8-4.9-12.7l-1-10.8c0-5.9 6.9-6.9 5.9-14.7l-1-11.8c0-2.9-3.9-4.9-6.9-5.9v-84.3L986 227.4c4.9-1 5.9-3.9 0-5.9-87.2-25.5-166.6-49-240-69.6-65.6-18.6-125.4-36.3-181.3-52.9-9.8-2.9-16.7-2.9-26.5-2-72.5 5.9-150.9 12.7-233.2 19.6-90.1 7.8-186.2 15.7-289 24.5-8.8 1-6.9 7.8-1 9.8 41.1 21.6 86.2 45.1 135.2 71.5C210 253.9 277.6 289.2 353 329.3c6.9 3.9 20.6 4.9 31.4 2.9 124.4-21.6 247.9-43.1 372.3-64.7 0-3.9-2-6.9-6.9-7.8l-289-47c-25.5-3.9-20.6-22.5-5.9-19.6L768.4 244c5.9-.9 9.8 3 9.8 8.9zM528.4 888.8c-6.9-25.5-6.9-51.9 5.9-76.4l-485-155.8c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.8-2.9-307.7 137.1zm16.7-294l187.1-82.3 14.7-93.1-22.5-6.9c-10.8 77.4-200.8 83.3-254.7 83.3-54.9 0-254.7-5.9-254.7-89.2v-34.3L61.1 440l484 154.8zm-16.7 80.4c-6.9-25.5-6.9-51.9 5.9-76.4L49.3 443c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.9-3-307.6 137.2zM526.5 782c-6.9-25.5-6.9-51.9 5.9-76.4l-485-155.8c-18.6 24.5-23.5 56.8-2 90.1l489.9 156.8 309.6-136.2c8.8-3.9 6.9-9.8-2.9-12.7l-7.8-2.9L526.5 782z"/>
           </svg>
         </div>
-        <p class="about-desc">
-          As a teacher, I value and advocate for continued education.  The world of technology is continuously changing and evolving.  If we are to keep up, then we too much change and evolve, and embrace life-long learning.</p>
+        <p>
+          As a teacher, I value and advocate for continued education. The world of technology is continuously changing and evolving.  If we are to keep up, then we too much change and evolve, and embrace life-long learning.</p>
       </div>
     </div>
   </section>
@@ -81,7 +82,7 @@
       <p><span class="sk-9">CSS</span><span class="sk-1">90%</span></p>
       <p><span class="sk-9">Sass</span><span class="sk-1">90%</span></p>
       <p><span class="sk-8">JavaScript</span><span class="sk-2">80%</span></p>
-      <p><span class="sk-5">JQuery</span><span class="sk-5">50%</span></p>
+      <p><span class="sk-7">JQuery</span><span class="sk-3">70%</span></p>
       <p><span class="sk-9">Bootstrap</span><span class="sk-1">90%</span></p>
       <p><span class="sk-4">PHP</span><span class="sk-6">40%</span></p>
       <p><span class="sk-9">Photoshop</span><span class="sk-1">90%</span></p>
@@ -92,7 +93,8 @@
   <section id="portfolio">
     <div class="port-container">
       <h3>Portfolio</h3>
-      <div class="port-grid">
+      <div id="portGrid" class="port-grid">
+
         <div class="port-item">
           <div class="port-img">
             <img src="img/authorWebsite.jpg" alt="Author Website"/>
@@ -106,14 +108,14 @@
               <li>PHP</li>
             </ul>
             <div class="port-links">
-              <a href="http://www.isabelapowers.com" target="_blank">Visit Site</a>
-              <a href="https://github.com/CarmenGV/AuthorWebsite" target="_blank">GitHub</a>
+              <a href="http://isabelapowers.com/" target="_blank">Visit Site</a>
             </div>
           </div>
         </div>
+
         <div class="port-item">
           <div class="port-img">
-            <img src="img/styleGuide.jpg" alt="Website Style Guide"/>
+            <img src="img/styleGuide.jpg" alt="Webstyle Guide"/>
           </div>
           <div class="port-desc">
             <h4>Webstyle Guide</h4>
@@ -121,9 +123,13 @@
               <li>Responsive Design</li>
               <li>Sass</li>
             </ul>
-            <a href="projects/webstyle/index.html" target="_blank">Visit Site</a>
+            <div class="port-links">
+              <a href="projects/webstyle/index.html" target="_blank">Visit Site</a>
+              <a href="https://github.com/CarmenGV/Techdegree-BuildWebstyleGuide" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
         <div class="port-item">
           <div class="port-img">
             <img src="img/onlineForm.jpg" alt="Online Form"/>
@@ -134,9 +140,13 @@
               <li>Responsive Design</li>
               <li>CSS</li>
             </ul>
-            <a href="projects/form/index.html" target="_blank">Visit Site</a>
+            <div class="port-links">
+              <a href="projects/form/index.html" target="_blank">Visit Site</a>
+              <a href="https://github.com/CarmenGV/Techdegree-OnlineRegistration" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
         <div class="port-item">
           <div class="port-img">
             <img src="img/gameApp.jpg" alt="Game App"/>
@@ -147,24 +157,32 @@
               <li>JavaScript</li>
               <li>DOM Manipulation</li>
             </ul>
-            <a href="projects/gameApp/index.html" target="_blank">Visit Site</a>
+            <div class="port-links">
+              <a href="projects/gameApp/index.html" target="_blank">Visit Site</a>
+              <a href="https://github.com/CarmenGV/Techdegree-GameShowApp" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
         <div class="port-item">
           <div class="port-img">
-            <img src="img/webApp.jpg" alt="WebApp Dashboard"/>
+            <img src="img/webApp.jpg" alt="Web App Dashboard"/>
           </div>
           <div class="port-desc">
-            <h4>WebApp Dashboard</h4>
+            <h4>Web App Dashboard</h4>
             <ul>
               <li>Responsive Design</li>
               <li>JQuery</li>
               <li>JavaScript</li>
               <li>SVG Graphics</li>
             </ul>
-            <a href="projects/webApp/index.html" target="_blank">Visit Site</a>
+            <div class="port-links">
+              <a href="projects/webApp/index.html" target="_blank">Visit Site</a>
+              <a href="https://github.com/CarmenGV/Techdegree-WebAppDashboard" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
         <div class="port-item">
           <div class="port-img">
             <img src="img/employeeDirectory.jpg" alt="Employee Directory"/>
@@ -176,9 +194,13 @@
               <li>API Data Fetching</li>
               <li>JavaScript</li>
             </ul>
-            <a href="projects/directory/index.html" target="_blank">Visit Site</a>
+            <div class="port-links">
+              <a href="projects/directory/index.html" target="_blank">Visit Site</a>
+              <a href="https://github.com/CarmenGV/Techdegree-EmployeeDirectory" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
       </div>
     <div>
   </section>
@@ -186,11 +208,11 @@
   <section id="contact">
     <h3>Contact</h3>
 
-    <div>
+    <div id="contact-info">
       <div class="social">
         <div class="social-icon">
           <a href="mailto:contact@cgvportfolio.com">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.497 493.497">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.497 493.497">
               <path class="social-svg" d="M444.556 85.218H48.942C21.954 85.218 0 107.171 0 134.16v225.177c0 26.988 21.954 48.942 48.942 48.942h395.613c26.988 0 48.941-21.954 48.941-48.942V134.16c.001-26.989-21.952-48.942-48.94-48.942zm16.314 48.942v225.177c0 2.574-.725 4.924-1.793 7.09L343.74 251.081l117.097-117.097c0 .065.033.112.033.176zM32.628 359.336V134.16c0-.064.033-.11.033-.175l117.097 117.097L34.413 366.426c-1.06-2.166-1.785-4.515-1.785-7.09zm219.156-62.434c-2.692 2.691-7.378 2.691-10.07 0L62.667 117.846h368.172L251.784 296.902zm-78.957-22.75l45.818 45.819c7.512 7.511 17.493 11.645 28.104 11.645 10.61 0 20.592-4.134 28.104-11.645l45.82-45.819 101.49 101.499H71.327l101.5-101.499z"/>
             </svg>
           </a>
@@ -205,7 +227,7 @@
       <div class="social">
         <div class="social-icon">
           <a href="https://www.linkedin.com/in/carmengvargas/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2389" viewBox="0 5 1036 990">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="2500" height="2389" viewBox="0 5 1036 990">
               <path class="social-svg" d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"/></svg>
 
           </a>
@@ -220,7 +242,7 @@
       <div class="social">
         <div class="social-icon">
           <a href="https://github.com/CarmenGV">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path class="social-svg" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </a>
         </div>
@@ -231,8 +253,11 @@
         </p>
       </div>
     </div>
-
   </section>
-
+  <footer>
+    <p>Handcrafted by me &#169; 2019</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

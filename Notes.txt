@@ -6,6 +6,140 @@ text		= #262b2b
 secondary 	= #394a52
 
 
-//ABOUT
+//DELETED CODE
+//VARIABLES
+const portfolio = [
+  {
+    title: "Author Website",
+    image: "img/authorWebsite.jpg",
+    desc: [
+      "Responsive Design",
+      "Sass",
+      "JQuery",
+      "PHP"
+    ],
+    links: {
+      live: "http://isabelapowers.com/"
+    }
+  },
+  {
+    title: "Webstyle Guide",
+    image: "img/styleGuide.jpg",
+    desc: [
+      "Responsive Design",
+      "Sass"
+    ],
+    links: {
+      live: "projects/webstyle/index.html",
+      github: "https://github.com/CarmenGV/Techdegree-BuildWebstyleGuide"
+    }
+  },
+  {
+    title: "Online Form",
+    image: "img/onlineForm.jpg",
+    desc: [
+      "Responsive Design",
+      "CSS"
+    ],
+    links: {
+      live: "projects/form/index.html",
+      github: "https://github.com/CarmenGV/Techdegree-OnlineRegistration"
+    }
+  },
+  {
+    title: "Game App",
+    image: "img/gameApp.jpg",
+    desc: [
+      "JavaScript",
+      "DOM Manipulation"
+    ],
+    links: {
+      live: "projects/gameApp/index.html",
+      github: "https://github.com/CarmenGV/Techdegree-GameShowApp"
+    }
+  },
+  {
+    title: "Web App Dashboard",
+    image: "img/webApp.jpg",
+    desc: [
+      "Responsive Design",
+      "JQuery",
+      "JavaScript",
+      "SVG Graphics"
+    ],
+    links: {
+      live: "projects/webApp/index.html",
+      github: "https://github.com/CarmenGV/Techdegree-WebAppDashboard"
+    }
+  },
+  {
+    title: "Employee Directory",
+    image: "img/employeeDirectory.jpg",
+    desc: [
+      "Responsive Design",
+      "API Data Fetching",
+      "JavaScript"
+    ],
+    links: {
+      live: "projects/directory/index.html",
+      github: "https://github.com/CarmenGV/Techdegree-EmployeeDirectory"
+    }
+  }
+];
+const portGrid = document.getElementById('portGrid');
 
-EDUCATOR
+//HELPER FUNCTIONS
+function createLI(descArr){
+  const ul = document.createElement('ul');
+  for(i=0; i<descArr.length; i++){
+    const li = document.createElement('li');
+    li.textContent = descArr[i];
+    ul.appendChild(li);
+  }
+  return ul;
+}
+function createButton(linkArr){
+  var links = `
+    <a href=${linkArr.live} target="_blank">
+      Visit Site
+    </a>
+  `;
+  if(linkArr.github){
+    links += `
+      <a href=${linkArr.github} target="_blank">
+        GitHub
+      </a>
+    `;
+  }
+  return links;
+}
+
+//PORT-ITEM GENERATOR
+function portItem(projectArr){
+  projectArr.map(project => {
+    const itemDiv = document.createElement('div');
+    const ul = createLI(project.desc);
+    itemDiv.className = "port-item";
+    portGrid.appendChild(itemDiv);
+    itemDiv.innerHTML = `
+      <div class="port-img">
+        <img src=${project.image} alt=${project.title}/>
+      </div>
+      <div class="port-desc">
+        <h4>${project.title}</h4>
+        ${ul}
+        <div class="port-links">
+          ${createButton(project.links)}
+        </div>
+      </div>
+    `;
+  });
+}
+
+//RUN FUNCTIONS
+window.addEventListener('load', ()=>{
+  return portItem(portfolio);
+});
+
+
+https://dev.to/changoman/showhide-element-on-scroll-w-vanilla-js-3odm
